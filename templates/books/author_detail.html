@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ object.name }}</title>
+</head>
+<body>
+    <h1>{{ object.name }}</h1>
+    <p>Age: {{ object.age }}</p>
+    <a href="{% url 'author-update' object.pk %}">Edit</a>
+    <a href="{% url 'author-delete' object.pk %}">Delete</a>
+    <a href="{% url 'author-list' %}">Back to list</a>
+</body>
+</html>

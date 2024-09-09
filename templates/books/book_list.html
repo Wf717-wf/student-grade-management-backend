@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+<body>
+<h1>Books List</h1>
+<ul>
+    {% for book in books %}
+
+    <table border="1" style="border-collapse:collapse;">
+        <tr>
+              {% load custom_filters %}
+
+<!--            过滤器-->
+<!--            <td>{{user.name|add:'2'}}</td>-->
+
+
+            <td>{{book.email}}</td>
+
+
+
+<td>{{ "hello world"|upper_case }}</td>
+
+        </tr>
+    </table>
+
+
+    {% empty %}
+    <li>No books available</li>
+    {% endfor %}
+</ul>
+</body>
+
+
+</html>
